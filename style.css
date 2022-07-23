@@ -1,0 +1,396 @@
+body {
+	background-color: #EAE7DC;>
+}
+
+.profile-image {
+	  width: 50%;
+}
+
+i {
+	margin-right:15px;
+}
+
+.footer1 {
+	font-family: "Montserrat";
+	color: #73716A;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.footer2 {
+	font-family: "Montserrat";
+	color: #73716A;
+	padding: 20px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.container {
+	margin-left: 10vw;
+	margin-right: 10vw;
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+
+.row {
+	display: flex;
+}
+
+.column-center {
+	flex: 40%;
+	text-align: center;
+}
+
+.column-left {
+	flex: 20%;
+}
+
+.column {
+	flex: 50%;
+}
+
+.column-small {
+	flex: 50%;
+}
+
+h1 {
+	color: #E85A4F;
+	font-family: "Montserrat";
+	font-size: 40px;
+	margin-top: 25px;
+	margin-bottom: 15px;
+	margin-left: 0;
+	margin-right: 0;
+	font-weight: 800;
+}
+
+h2 {
+	color: #E85A4F;
+	font-family: "Montserrat";
+	font-size: 30px;
+	margin-top: 25px;
+	margin-bottom: 15px;
+	margin-left: 0;
+	margin-right: 0;
+	font-weight: 800;
+}
+
+.long-text {
+	color: #73716A;
+	font-family: "Montserrat";
+	font-size: 20px;
+	margin-bottom: 15px;
+	margin-left: 0;
+	margin-right: 0;
+	line-height: 2rem;
+	font-weight: 600;
+}
+
+.long-text-bold {
+	color: #73716A;
+	font-family: "Montserrat";
+	font-size: 20px;
+	margin-top: 25px;
+	margin-bottom: 15px;
+	margin-left: 0;
+	margin-right: 0;
+	font-weight: 800;
+}
+
+/* unvisited link */
+a:link {
+	font-family: "Montserrat";
+	font-size: 20px;
+  color: #73716A;
+}
+
+/* visited link */
+a:visited {
+	font-family: "Montserrat";
+	font-size: 20px;
+  color: #73716A;
+}
+
+/* mouse over link */
+a:hover {
+	font-family: "Montserrat";
+	font-size: 20px;
+  color: #E98074;
+}
+
+/* selected link */
+a:active {
+	font-family: "Montserrat";
+	font-size: 20px;
+  color: #73716A;
+}
+
+.vr {
+	display:inline;
+	height:100%;
+	width:1px;
+	border:1px inset;
+	margin:5px
+}
+
+.buttons {
+	text-align: center;
+}
+
+.button {
+	color: #73716A;
+	margin-left: 15px;
+	position: relative;
+	font-family: "Montserrat";
+	font-size: 16px;
+	font-weight: 700;
+	border-color: transparent;
+	padding: 10px;
+	outline: none;
+	background-color: transparent;
+	width: 8rem;
+	cursor: pointer;
+}
+
+.button:hover {
+	color: #E98074;
+	cursor: pointer;
+}
+
+.button-active {
+	color: #E98074;
+	margin-left: 15px;
+	position: relative;
+	font-family: "Montserrat";
+	font-size: 16px;
+	font-weight: 700;
+	border-color: transparent;
+	padding: 10px;
+	outline: none;
+	background-color: transparent;
+	width: 8rem;
+	border-style: solid;
+	border-color: #E98074;
+	border-width: 3px;
+	border-top: 0px;
+	border-right: 0px;
+	border-left: 0px;
+	cursor: pointer;
+}
+
+.button-active:hover {
+	color: #E98074;
+	cursor: pointer;
+}
+
+.gallery {
+	display: flex;
+	padding: 0px;
+	transition: 0.3s;
+}
+.gallery:hover .gallery__image {
+	/*filter: grayscale(1);*/
+}
+.gallery__column {
+	display: flex;
+	flex-direction: column;
+}
+.gallery__column25 {
+	display: flex;
+	flex-direction: column;
+	width: 25%;
+}
+.gallery__column33 {
+	display: flex;
+	flex-direction: column;
+	width: calc(100% / 3);
+}
+.gallery__link {
+	margin: 2px;
+	overflow: hidden;
+}
+.gallery__link:hover .gallery__image {
+	/*filter: grayscale(0);*/
+}
+.gallery__link:hover .gallery__caption {
+	/*opacity: 1;*/
+}
+.gallery__thumb {
+	position: relative;
+}
+.gallery__image {
+	display: block;
+	width: 100%;
+	min-width: 100%;
+	transition: 0.3s;
+}
+.gallery__image:hover {
+	/*transform: scale(1.1);*/
+}
+.gallery__caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 25px 15px 15px;
+	width: 100%;
+	font-family: "Montserrat";
+	color: #EAE7DC;
+	font-size: 16px;
+	font-weight: 600;
+	opacity: 0;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+	transition: 0.3s;
+}
+
+/* MODAL */
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+.modal-content {
+	margin: auto;
+	display: block;
+	height: 80vh;
+}
+
+/* The Close Button */
+.close {
+	position: absolute;
+	top: 20px;
+	right: 40px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+/* SLIDESHOW */
+* {
+	box-sizing: border-box
+}
+
+body {
+	font-family: "Montserrat";
+	margin:0
+}
+
+.mySlides {
+	display: none;
+	text-align: center;
+}
+
+img {
+	vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+	display: flex;
+  position: relative;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0px;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
